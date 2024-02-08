@@ -20,7 +20,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     replace(`${pathName}?${params.toString()}`)
 
 
-  }, 500)
+  }, 100)
 
   return (
     <div className="relative flex flex-1 flex-shrink-0">
