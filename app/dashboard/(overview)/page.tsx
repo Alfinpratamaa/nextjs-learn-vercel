@@ -1,12 +1,12 @@
 import React from 'react'
-import { lusitana } from '../ui/fonts'
+import { lusitana } from '../../ui/fonts'
 import {
     Card
-} from '../ui/dashboard/cards'
-import LatestInvoices from '../ui/dashboard/latest-invoices'
-import RevenueChart from '../ui/dashboard/revenue-chart'
+} from '../../ui/dashboard/cards'
+import LatestInvoices from '../../ui/dashboard/latest-invoices'
+import RevenueChart from '../../ui/dashboard/revenue-chart'
 
-import { fetchRevenue, fetchLatestInvoices, fetchCardData } from '../lib/data'
+import { fetchRevenue, fetchLatestInvoices, fetchCardData } from '../../lib/data'
 
 
 const Dashboard = async () => {
@@ -24,7 +24,7 @@ const Dashboard = async () => {
                 <Card title='Pending' value={totalPaidInvoices} type='pending' />
                 <Card title='Total Invoices' value={numberOfInvoices} type='invoices' />
                 <Card title='Total Customers' value={numberOfCustomers} type='customers' />
-            </div> 
+            </div>
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
                 <RevenueChart revenue={revenue} />
                 <LatestInvoices latestInvoices={latestInvoices} />
