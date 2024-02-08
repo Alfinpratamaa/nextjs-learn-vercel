@@ -3,7 +3,9 @@ import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
+  Cog6ToothIcon
 } from '@heroicons/react/24/outline';
+
 
 import Link from 'next/link';
 import clsx from 'clsx';
