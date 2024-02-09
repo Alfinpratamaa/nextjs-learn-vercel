@@ -1,3 +1,4 @@
+
 import { inter } from "@/app/ui/fonts"
 import SideNav from "../ui/dashboard/sidenav"
 
@@ -11,6 +12,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
             </div>
             <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
         </div>
+
     )
 }
 
